@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #58a6ff;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 12px;
+  background-color: #161b22;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background-color: #238636;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  background-color: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.calculator, .investment-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+input, select {
+  background-color: #0d1117;
+  color: #fff;
+}
+
+button {
+  background-color: #238636;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid #30363d;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #21262d;
+}
+
+/* Carrossel */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+  min-width: 220px;
+  margin-right: 20px;
+  background-color: #21262d;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.carousel-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.stock-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #21262d;
+  border-radius: 12px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 20px;
+  color: #8b949e;
+}
