@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma Financeira Profissional</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6059392385177670"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Plataforma Financeira Profissional</h1>
+    <p class="subtitle">Simule investimentos e acompanhe ações em tempo real.</p>
+
+    <!-- Abas -->
+    <div class="tabs">
+      <div class="tab active" data-tab="juros">📊 Juros Compostos</div>
+      <div class="tab" data-tab="investimentos">📈 Investimentos</div>
+    </div>
+
+    <!-- Juros Compostos -->
+    <section id="juros" class="tab-content active">
+      <h2>Calculadora de Juros Compostos</h2>
+
+      <!-- Anúncio -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6059392385177670"
+           data-ad-slot="9919107954"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+      <div class="calculator">
+        <label for="principal">Valor inicial (R$):</label>
+        <input type="number" id="principal" value="1000">
+
+        <label for="rate">Taxa de juros (% ao mês):</label>
+        <input type="number" id="rate" value="1">
+
+        <label for="time">Período (meses):</label>
+        <input type="number" id="time" value="12">
+
+        <button id="calculateCompound">Calcular</button>
+      </div>
+
+      <table id="compoundTable"></table>
+      <p>Total investido: <span id="compoundInvested">R$ 0,00</span></p>
+      <p>Valor final: <span id="compoundFinal">R$ 0,00</span></p>
+    </section>
+
+    <!-- Investimentos -->
+    <section id="investimentos" class="tab-content">
+      <h2>Investimentos em Ações</h2>
+
+      <!-- Carrossel -->
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack"></div>
+      </div>
+
+      <div class="carousel-buttons">
+        <button id="prevBtn">&#10094;</button>
+        <button id="nextBtn">&#10095;</button>
+      </div>
+
+      <!-- Anúncio -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6059392385177670"
+           data-ad-slot="9919107954"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+      <!-- Detalhes da ação -->
+      <div id="stockDetails" class="stock-details">
+        <h3 id="selectedStock">Selecione uma ação</h3>
+        <canvas id="stockChart"></canvas>
+      </div>
+
+      <!-- Calculadora de investimento -->
+      <div class="investment-calculator">
+        <label for="stockSelect">Escolha uma ação:</label>
+        <select id="stockSelect"></select>
+
+        <label for="quantity">Quantidade de ações:</label>
+        <input type="number" id="quantity" value="1">
+
+        <label for="investmentPeriod">Período (anos):</label>
+        <input type="number" id="investmentPeriod" value="1">
+
+        <button id="calculateBtn">Calcular</button>
+
+        <table id="resultTable"></table>
+        <p>Total investido: <span id="totalInvestment">US$ 0,00</span></p>
+        <p>Total estimado: <span id="dividendAmount">US$ 0,00</span></p>
+      </div>
+    </section>
+
+    <!-- Anúncio rodapé -->
+    <ins class="adsbygoogle"
+         style="display:block; margin-top:20px;"
+         data-ad-client="ca-pub-6059392385177670"
+         data-ad-slot="9919107954"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer>
+      ⚠️ Resultados são apenas estimativas. Consulte um profissional financeiro.
+    </footer>
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
